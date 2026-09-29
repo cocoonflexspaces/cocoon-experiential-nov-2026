@@ -159,3 +159,5 @@
 
   .cal.days-11, .cal.days-12 { grid-template-columns: repeat(6, 1fr); }
   @media (max-width: 900px) { .cal.days-11, .cal.days-12 { grid-template-columns: repeat(2, 1fr); } }
+  #joy-boh.gallery { grid-template-columns: repeat(2, 1fr); }
+  #joy-boh .photo img { aspect-ratio: 3/2; }

@@ -930,6 +930,8 @@
 
   .cal.days-11, .cal.days-12 { grid-template-columns: repeat(6, 1fr); }
   @media (max-width: 900px) { .cal.days-11, .cal.days-12 { grid-template-columns: repeat(2, 1fr); } }
+  #joy-boh.gallery { grid-template-columns: repeat(2, 1fr); }
+  #joy-boh .photo img { aspect-ratio: 3/2; }
 
 </style>
 </head>
@@ -1095,6 +1097,7 @@
   <div class="tabs" role="tablist" aria-label="Casa Joy photos">
     <button class="tab" role="tab" aria-selected="true" data-gallery="joy-cleared">Cleared for your build</button>
     <button class="tab" role="tab" aria-selected="false" data-gallery="joy-today">As furnished today</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="joy-boh">Top floor · back-of-house</button>
     <button class="tab" role="tab" aria-selected="false" data-gallery="joy-activations">Past activations here</button>
   </div>
   <div class="gallery active" id="joy-cleared">
@@ -1102,15 +1105,15 @@
     <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-01-parlor-staircase.jpg" alt="Art-deco staircase" /><figcaption>Art-deco staircase</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-02-living-room-piano.jpg" alt="Living room · Level 2" /><figcaption>Living room · Level 2</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-03-living-room-fireplace.jpg" alt="Living room fireplace" /><figcaption>Living room fireplace</figcaption></figure>
-    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-04-garden-level-hall.jpg" alt="Garden-level room" /><figcaption>Garden-level room</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-05-kitchen.jpg" alt="Kitchen · garden level" /><figcaption>Kitchen · garden level</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-06-kitchen-stone-wall.jpg" alt="Kitchen stone wall" /><figcaption>Kitchen stone wall</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-07-kitchen-painted-fridge.jpg" alt="Hand-painted kitchen detail" /><figcaption>Hand-painted kitchen detail</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-08-hand-painted-wall.jpg" alt="Hand-painted walls" /><figcaption>Hand-painted walls</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-09-garden.jpg" alt="English garden" /><figcaption>English garden</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-10-garden-trellis.jpg" alt="Garden trellis" /><figcaption>Garden trellis</figcaption></figure>
   </div>
   <div class="gallery" id="joy-today">
-    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/casa-joy/today-01-living-room-fireplace.jpg" alt="Living room · today" /><figcaption>Living room · today</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-01-living-room-fireplace.jpg" alt="Living room · today" /><figcaption>Living room · today</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-02-living-room-piano.jpg" alt="Living room with piano · today" /><figcaption>Living room with piano · today</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-03-dining-room.jpg" alt="Formal dining room · today" /><figcaption>Formal dining room · today</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-04-library.jpg" alt="Library · today" /><figcaption>Library · today</figcaption></figure>
@@ -1118,7 +1121,11 @@
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-06-library-fireplace.jpg" alt="Library fireplace" /><figcaption>Library fireplace</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-07-primary-bedroom.jpg" alt="Primary bedroom · Level 3" /><figcaption>Primary bedroom · Level 3</figcaption></figure>
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-08-primary-bath.jpg" alt="Hammam-style bath · Level 3" /><figcaption>Hammam-style bath · Level 3</figcaption></figure>
-    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-09-top-floor-studio-boh.jpg" alt="Top-floor studio · back-of-house" /><figcaption>Top-floor studio · back-of-house</figcaption></figure>
+  </div>
+  <div class="gallery" id="joy-boh">
+    <p class="gallery-note" style="grid-column: 1 / -1;">The top floor is not cleared. It stays furnished as your back-of-house: crew base, storage and green room.</p>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/boh-01-top-floor-studio.jpg" alt="Top-floor painting studio · stays furnished · back-of-house" /><figcaption>Top-floor painting studio · stays furnished · back-of-house</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/boh-02-top-floor-office.jpg" alt="Top-floor office · stays furnished · back-of-house" /><figcaption>Top-floor office · stays furnished · back-of-house</figcaption></figure>
   </div>
   <div class="gallery" id="joy-activations">
     <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/activation-01-balloon-ceiling.jpg" alt="Brand activation · balloon ceiling" /><figcaption>Brand activation · balloon ceiling</figcaption></figure>
@@ -1289,7 +1296,7 @@
   <div class="superhead">Downloads</div>
   <h2 class="headline" style="margin-top:14px;">Everything your team and your client need to present the two houses.</h2>
   <div class="dl-grid">
-    <a class="dl primary" href="downloads/cocoon-holiday-activation-all-assets.zip" download><span class="k">Everything · ZIP</span><span class="t">All photos + floor plans</span><span class="s">Both houses · 9 MB</span><span class="go">Download ↓</span></a>
+    <a class="dl primary" href="downloads/cocoon-holiday-activation-all-assets.zip" download><span class="k">Everything · ZIP</span><span class="t">All photos + floor plans</span><span class="s">Both houses · 10 MB</span><span class="go">Download ↓</span></a>
     <a class="dl" href="downloads/casa-joy-photos.zip" download><span class="k">Casa Joy · ZIP</span><span class="t">Casa Joy photos</span><span class="s">Cleared visualisations, as furnished today, past activations · 5 MB</span><span class="go">Download ↓</span></a>
     <a class="dl" href="downloads/casa-mas-photos-and-plans.zip" download><span class="k">Casa Mas · ZIP</span><span class="t">Casa Mas photos + plans</span><span class="s">Floors 1–4 · floor plans PDF · 5 MB</span><span class="go">Download ↓</span></a>
     <a class="dl" href="https://drive.google.com/file/d/1jkBUPWkS8udhlzEZKJ7zjJBRQfDgfAXf/view?usp=sharing" target="_blank" rel="noopener"><span class="k">Casa Joy · Video</span><span class="t">Walkthrough video</span><span class="s">Full room-by-room walkthrough of the house</span><span class="go">Watch ↗</span></a>
