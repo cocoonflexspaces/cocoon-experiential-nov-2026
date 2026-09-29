@@ -6,8 +6,8 @@ Edit here, then run:  python3 build.py
 # ── Pending vendor quote ────────────────────────────────────────────────
 # Set to a number (e.g. 38500) once OTI's quote lands. None = shows "Quote in progress".
 OTI_REMOVAL_RESET = {
-    "A": round(50499.38 * 1.15, 2),  # OTI estimate 9/28: removal 8 techs × $95 × 30 hrs $22,800 + reset $22,800 + packing $4,500 + tax
-    "B": round(50499.38 * 1.15, 2),  # +15% Cocoon coordination markup
+    "A": round((50499.38 + 2500) * 1.15, 2),  # OTI removal/reset + $2,500 storage, +15%  # OTI estimate 9/28: removal 8 techs × $95 × 30 hrs $22,800 + reset $22,800 + packing $4,500 + tax
+    "B": round((50499.38 + 2500) * 1.15, 2),
 }
 
 SECURITY_DEPOSIT = 0.25  # refundable, both houses

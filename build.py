@@ -115,7 +115,7 @@ def joy_panel(opt):
         plus = "+ furniture &amp; art removal / reset, security &amp; crowd control, parking permits if required"
         dep = f"50% deposit on signing: {money(sub/2)} · refundable security deposit (25%): {money(sub*SECURITY_DEPOSIT)} · both adjust once furniture handling is added"
     else:
-        extra = (f'<tr><td><strong>Furniture &amp; art removal, storage and reset</strong><span class="sub">Specialist fine-art handlers · 8 technicians × 3 days to clear + 3 days to reset · packing materials included · pieces stored on site where the house allows; any off-site storage confirmed after the walkthrough</span></td>'
+        extra = (f'<tr><td><strong>Furniture &amp; art removal, storage and reset</strong><span class="sub">Specialist fine-art handlers · 8 technicians × 3 days to clear + 3 days to reset · packing materials and storage of all removed pieces included</span></td>'
                  f'<td class="qty">1</td><td class="amount">{money(oti)}</td><td class="amount">{money(oti)}</td></tr>')
         total_label = f"Option {opt} · Casa Joy · venue total"
         total_value = money(sub + oti)
@@ -150,7 +150,7 @@ MATRIX = [
      "A clean before check-in, after every day's check-out and a final clean after the reset, with trash removal included. All priced above.",
      f"A clean before check-in and after every day's check-out by ownership's approved vendor ({money(MAS['deep_clean_floor'])}/floor per clean, included). Garbage by private hauler at {money(MAS['garbage_load'])}/load, estimated at one a day and trued up after the event. Food waste has to leave the building nightly."),
     ("Removing and storing existing furniture and art",
-     "<strong>Required on the activation floors.</strong> A team of 8 fine-art handlers clears the house over 3 Cocoon prep days and resets it over 3 days after your load-out, with all packing materials. Their cost and the 6 days the house is held are both priced above. Pieces are stored on site where the house allows; if anything needs to go to off-site storage, we'll confirm it and its cost after the walkthrough.",
+     "<strong>Required on the activation floors.</strong> A team of 8 fine-art handlers clears the house over 3 Cocoon prep days and resets it over 3 days after your load-out, with all packing materials and secure storage of every removed piece. Their cost and the 6 days the house is held are both priced above.",
      "<strong>Not needed.</strong> The house is unfurnished, so there's no removal, storage or reset cost and no extra days."),
     ("Processing, admin, insurance and tax",
      "No admin fee. Wire/ACH is preferred; card payments carry a 3.7% processing fee. Space rental isn't subject to NY sales tax. COI with waiver of subrogation, naming Cocoon and the owner as additional insured, is due 2 pm two days before load-in. Every vendor on site needs one too.",
