@@ -1,0 +1,5 @@
+raw/
+dec.sh
+__pycache__/
+.DS_Store
+artifact.html

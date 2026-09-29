@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Cocoon × The Experiential — Holiday Activation Proposal · November 2026</title>
+<meta name="description" content="Two Manhattan townhouses for a two-day holiday brand activation, November 2026 — Casa Joy and Casa Mas. Prepared by Cocoon Flex Spaces for Mia Vitale, The Experiential." />
+<link rel="icon" href="img/cocoon/mark-128.png" />
+<style>
+  /* ============================================================
+     COCOON BRAND TOKENS
+     Primary: #F54029 (Brilliance / terracotta) + #F5F2E8 (Natural / cream)
+     Accent:  #275453 (Clarity / deep teal), #000000 (Black)
+     Type:    Helvetica Neue — Bold for titles, Medium for headlines, Regular for body
+     ============================================================ */
+
+  :root {
+    --cream: #F5F2E8;
+    --cream-deep: #ECE7D6;
+    --cream-warm: #EFE9D7;
+    --terracotta: #F54029;
+    --terracotta-soft: #E8593F;
+    --terracotta-deep: #C8331E;
+    --teal: #275453;
+    --teal-soft: #355F5E;
+    --ink: #1A1A1A;
+    --ink-soft: #4A4A4A;
+    --ink-mute: #6B6B6B;
+    --rule: rgba(26,26,26,0.12);
+    --rule-soft: rgba(26,26,26,0.06);
+    --max: 1280px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--terracotta); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* TYPE SCALE */
+  .superhead {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 11px;
+    color: var(--terracotta);
+  }
+  .title {
+    font-weight: 700;
+    font-size: clamp(40px, 7vw, 96px);
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  .headline {
+    font-weight: 500;
+    font-size: clamp(24px, 3.2vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    margin: 0 0 0.6em;
+  }
+  .lede {
+    font-weight: 400;
+    font-size: clamp(18px, 1.5vw, 22px);
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0 0 1em;
+  }
+  .body { font-size: 17px; line-height: 1.6; }
+  .caption {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+  }
+  .eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+  }
+
+  /* SECTION FRAME */
+  section {
+    padding: clamp(64px, 10vh, 140px) clamp(24px, 5vw, 80px);
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  section + section { border-top: 1px solid var(--rule); }
+  section.tight { padding-top: clamp(48px, 6vh, 80px); padding-bottom: clamp(48px, 6vh, 80px); }
+  section.full {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.full > .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+
+  .logomark { width: 28px; height: 28px; flex: 0 0 auto; }
+  .wordmark { height: 16px; width: auto; flex: 0 0 auto; }
+
+  /* TOP BAR */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 242, 232, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 14px clamp(24px, 5vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .topbar-brand { display: flex; align-items: center; gap: 18px; font-size: 13px; }
+  .topbar-brand .cocoon { display: flex; align-items: center; gap: 10px; padding-right: 18px; }
+  .topbar-brand .divider { width: 1px; height: 22px; background: var(--rule); flex: 0 0 auto; }
+  .topbar-brand .partner {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink);
+  }
+  .topbar-meta {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .topbar-meta { display: none; }
+  }
+
+  /* COVER */
+  .cover {
+    position: relative;
+    background: var(--cream);
+    padding: 0;
+    max-width: none;
+    overflow: hidden;
+    border-bottom: 1px solid var(--rule);
+  }
+  .cover-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    min-height: 640px;
+  }
+  .cover-text {
+    padding: clamp(40px, 6vw, 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    background: var(--cream);
+  }
+  .cover-image {
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cover-meta {
+    display: grid;
+    gap: 6px;
+    margin-top: 32px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+  .cover-meta strong { color: var(--ink); font-weight: 600; }
+
+  /* TWO-COL */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+  .two-col.media-first { grid-template-columns: 1.4fr 1fr; }
+  .two-col.balanced { grid-template-columns: 1fr 1fr; }
+
+  /* PHOTO CARDS / FRAMES */
+  .photo {
+    background: var(--cream-deep);
+    overflow: hidden;
+    position: relative;
+  }
+  .photo img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transition: transform 600ms ease;
+  }
+  .photo.tall img { aspect-ratio: 3/4; }
+  .photo.square img { aspect-ratio: 1/1; }
+  .photo.wide img { aspect-ratio: 16/9; }
+
+  .photo-grid { display: grid; gap: 18px; }
+  .photo-grid.two { grid-template-columns: 1fr 1fr; }
+  .photo-grid.three { grid-template-columns: repeat(3, 1fr); }
+  .photo-grid.four { grid-template-columns: repeat(4, 1fr); }
+
+  .photo-grid.editorial {
+    grid-template-columns: 1.6fr 1fr;
+    gap: 18px;
+  }
+  .photo-grid.editorial .photo { height: 100%; }
+  .photo-grid.editorial .photo img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  .photo-grid.editorial .photo:first-child img { aspect-ratio: 4/5; }
+
+  /* QUAD MOSAIC — 1 featured + 3 stacked
+     The grid carries its own aspect-ratio so the layout sizes the same
+     whether real images, placeholders, or a mix render inside. */
+  .photo-grid.quad {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 18px;
+    aspect-ratio: 16/11;
+    max-height: 720px;
+  }
+  .photo-grid.quad > :nth-child(1) { grid-row: 1 / 4; }
+  .photo-grid.quad .photo { height: 100%; min-height: 0; overflow: hidden; }
+  .photo-grid.quad .photo img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  /* Placeholders injected into a quad cell — collapse to fill the cell
+     rather than stretching to their content. */
+  .photo-grid.quad .photo .placeholder-frame {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto !important;
+    padding: 20px 16px;
+    min-height: 0;
+    gap: 6px;
+  }
+  .photo-grid.quad .photo .placeholder-frame .ph-label { font-size: 10px; }
+  .photo-grid.quad .photo .placeholder-frame .ph-text { font-size: 12px; line-height: 1.4; }
+  @media (max-width: 900px) {
+    .photo-grid.quad {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      aspect-ratio: auto;
+      max-height: none;
+    }
+    .photo-grid.quad > :nth-child(1) {
+      grid-row: 1;
+      grid-column: 1 / 3;
+    }
+    .photo-grid.quad .photo img { aspect-ratio: 3/2; }
+    .photo-grid.quad .photo .placeholder-frame { aspect-ratio: 3/2 !important; }
+  }
+
+  /* Floor-labelled tile — small caption inside the photo frame */
+  .photo .floor-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(26,26,26,0.78);
+    color: var(--cream);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  /* OPTION HEADER — venue sections */
+  .option-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    align-items: end;
+    margin-bottom: 28px;
+  }
+  .option-num {
+    font-size: clamp(64px, 8vw, 110px);
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--terracotta);
+    letter-spacing: -0.04em;
+  }
+  .option-title {
+    font-size: clamp(28px, 3.4vw, 44px);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .option-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  /* PRICING TABLE — line-item breakdown */
+  .breakdown {
+    background: #FFF;
+    border: 1px solid var(--rule);
+    padding: 0;
+    margin-top: 32px;
+  }
+  .breakdown table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .breakdown th, .breakdown td {
+    padding: 14px 24px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .breakdown th {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    background: var(--cream-warm);
+  }
+  .breakdown td.amount, .breakdown th.amount { text-align: right; font-variant-numeric: tabular-nums; }
+  .breakdown td.qty { text-align: center; color: var(--ink-soft); width: 60px; font-variant-numeric: tabular-nums; }
+  .breakdown tr.subtotal td {
+    background: var(--cream-warm);
+    font-weight: 700;
+    border-top: 2px solid var(--ink);
+    font-size: 15px;
+  }
+  .breakdown tr.subtle td { color: var(--ink-soft); font-size: 13px; }
+  .breakdown tr.total td {
+    background: var(--terracotta);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .breakdown tr.total td .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; display: block; opacity: 0.85; font-weight: 700; margin-bottom: 2px; }
+  @media (max-width: 600px) {
+    .breakdown th, .breakdown td { padding: 10px 14px; }
+  }
+
+  /* CALLOUT BAR */
+  .callout {
+    background: var(--terracotta);
+    color: #FFF;
+    padding: clamp(40px, 6vw, 80px);
+    margin: 0;
+    max-width: none;
+  }
+  .callout .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+  .callout .title { color: #FFF; }
+  .callout .superhead { color: rgba(255,255,255,0.88); }
+  .callout .lede { color: rgba(255,255,255,0.92); }
+
+  /* DIVIDER LABEL */
+  .divider-label {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+    margin: 0 0 32px;
+  }
+  .divider-label .text {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--terracotta);
+  }
+  .divider-label .line {
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* SIMPLE STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .stat .num {
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--terracotta);
+  }
+  .stat .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* NOTE BOX */
+  .note {
+    background: #FFF;
+    border-left: 3px solid var(--terracotta);
+    padding: 32px 36px;
+    margin: 32px 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .note p { margin: 0 0 14px; }
+  .note p:last-child { margin-bottom: 0; }
+  .note .signature {
+    margin-top: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--terracotta);
+    font-weight: 700;
+  }
+
+  /* PILL CTA */
+  .cta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: var(--ink);
+    color: var(--cream);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background 200ms ease;
+    white-space: nowrap;
+  }
+  .cta-pill:hover { background: var(--terracotta); text-decoration: none; }
+  .cta-pill.terracotta { background: var(--terracotta); color: #FFF; }
+  .cta-pill.terracotta:hover { background: var(--ink); }
+
+  /* WALKTHROUGH STEPS — used for "at a glance" comparison + next steps */
+  .walk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .walk .step {
+    border-top: 2px solid var(--terracotta);
+    padding-top: 24px;
+  }
+  .walk .step-num {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--terracotta);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .walk .step h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .walk.aligned .step {
+    display: flex;
+    flex-direction: column;
+  }
+  .walk.aligned .step h4 {
+    line-height: 1.2 !important;
+    min-height: 2.4em;
+    margin: 0 0 14px;
+    display: block;
+  }
+  .walk.aligned .step .step-body {
+    flex: 1 1 auto;
+    margin: 0 0 18px;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .walk.aligned .step .step-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--terracotta);
+    letter-spacing: -0.02em;
+    margin-top: auto;
+    line-height: 1;
+  }
+  .walk.aligned .step .step-price .sub {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-mute);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  .walk .step p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  /* PLACEHOLDER FRAME — defensive fallback for any image that fails to load */
+  .placeholder-frame {
+    background: var(--cream-deep);
+    border: 1px dashed rgba(26,26,26,0.18);
+    padding: 24px 18px;
+    text-align: center;
+    color: var(--ink-soft);
+    aspect-ratio: 3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .placeholder-frame .ph-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+  }
+  .placeholder-frame .ph-text { font-size: 12px; max-width: 320px; line-height: 1.4; }
+  .placeholder-frame.tall { aspect-ratio: 3/4; }
+  /* Universal: any placeholder inside any photo-grid cell shrinks to fit */
+  .photo-grid .photo .placeholder-frame {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2 !important;
+    min-height: 0;
+  }
+
+  /* "EMERGING" CARD — for venue D */
+  .emerging-card {
+    background: var(--cream-deep);
+    border: 1px solid var(--rule);
+    padding: clamp(40px, 5vw, 64px);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: clamp(24px, 4vw, 48px);
+    align-items: center;
+  }
+  .emerging-card .num {
+    font-size: clamp(56px, 7vw, 96px);
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--terracotta);
+    letter-spacing: -0.04em;
+  }
+  .emerging-card .tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .emerging-card .text h3 {
+    margin: 0 0 12px;
+    font-size: clamp(22px, 2.4vw, 30px);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+  }
+  .emerging-card .text p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+    max-width: 640px;
+  }
+  .emerging-card .status {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    color: var(--terracotta);
+    border: 1px solid var(--terracotta);
+    padding: 10px 14px;
+    white-space: nowrap;
+  }
+  @media (max-width: 700px) {
+    .emerging-card { grid-template-columns: 1fr; text-align: left; }
+    .emerging-card .status { justify-self: start; }
+  }
+
+  /* EXPANSION SIDEBAR — used inside Venue A for "more floors available" */
+  .expansion {
+    background: var(--cream-warm);
+    border-left: 3px solid var(--terracotta);
+    padding: 28px 32px;
+    margin-top: 32px;
+  }
+  .expansion .tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 10px;
+  }
+  .expansion h4 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .expansion p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  /* TEAL CALLOUT — for services note */
+  .callout.teal {
+    background: var(--teal);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 60px clamp(24px, 5vw, 80px);
+    border-top: 1px solid var(--rule);
+    background: var(--cream);
+    color: var(--ink-soft);
+  }
+  footer .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  footer .sig { font-weight: 600; color: var(--ink); font-size: 14px; }
+  footer .meta { font-size: 12px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .cover-grid { grid-template-columns: 1fr; min-height: auto; }
+    .cover-image { height: 50vh; }
+    .two-col, .two-col.media-first, .two-col.balanced { grid-template-columns: 1fr; gap: 32px; }
+    .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr 1fr; }
+    .walk { grid-template-columns: 1fr; gap: 28px; }
+  }
+  @media (max-width: 600px) {
+    .photo-grid.two, .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr; }
+    section { padding: 56px 20px; }
+    .topbar-inner { padding: 14px 20px; }
+  }
+
+  @media print {
+    .topbar { display: none; }
+    section { page-break-inside: avoid; }
+  }
+
+  /* LIGHTBOX — fullscreen viewer for venue photos */
+  section[data-lightbox] .photo { cursor: zoom-in; }
+  section[data-lightbox] .photo img { transition: transform 500ms ease, filter 300ms ease; }
+  section[data-lightbox] .photo:hover img { transform: scale(1.03); filter: brightness(1.04); }
+
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.94);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(20px, 5vw, 56px);
+    cursor: zoom-out;
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+  .lightbox.open { display: flex; opacity: 1; }
+  .lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    transform: scale(0.96);
+    transition: transform 300ms cubic-bezier(.2, .8, .2, 1);
+  }
+  .lightbox.open img { transform: scale(1); }
+  .lightbox-close {
+    position: fixed;
+    top: 22px;
+    right: 26px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 50%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background 200ms ease;
+  }
+  .lightbox-close:hover { background: rgba(255, 255, 255, 0.18); }
+  .lightbox-caption {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+  }
+
+  /* ============================================================
+     ADDITIONS — Experiential proposal
+     ============================================================ */
+  .casa-num {
+    font-size: clamp(64px, 8vw, 110px); font-weight: 700; line-height: 0.8;
+    color: var(--terracotta); letter-spacing: -0.04em;
+  }
+  .casa-header { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: end; margin-bottom: 36px; }
+  .casa-header h2 { font-size: clamp(34px, 4.4vw, 60px); line-height: 1.02; letter-spacing: -0.025em; margin: 0; font-weight: 700; }
+  .casa-header .tag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink-soft); font-weight: 700; margin-bottom: 8px; }
+  @media (max-width: 600px) { .casa-header { grid-template-columns: 1fr; gap: 10px; } }
+
+  .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 32px 0 0; }
+  .facts > div { background: #FFF; padding: 18px 20px; }
+  .facts .k { font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink-mute); font-weight: 700; }
+  .facts .v { font-size: 16px; font-weight: 600; margin-top: 6px; line-height: 1.3; }
+  @media (max-width: 900px) { .facts { grid-template-columns: 1fr 1fr; } }
+
+  /* GALLERY + TABS */
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 40px 0 18px; }
+  .tab {
+    border: 1px solid var(--ink); background: transparent; color: var(--ink);
+    padding: 9px 16px; border-radius: 100px; font: inherit; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;
+  }
+  .tab[aria-selected="true"] { background: var(--ink); color: var(--cream); }
+  .tab:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 2px; }
+  .gallery { display: none; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .gallery.active { display: grid; }
+  .gallery .photo img { aspect-ratio: 1/1; }
+  .gallery .photo.feature { grid-column: span 2; grid-row: span 2; }
+  .gallery .photo figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 12px 10px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.55)); color: #FFF;
+    font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
+  }
+  .gallery-note { font-size: 13px; color: var(--ink-soft); margin: 0 0 18px; max-width: 760px; }
+  .gallery-note strong { color: var(--ink); }
+  @media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+
+  /* CALENDAR STRIP */
+  .cal { display: grid; gap: 8px; margin-top: 18px; }
+  .cal.days-5 { grid-template-columns: repeat(5, 1fr); }
+  .cal.days-6 { grid-template-columns: repeat(6, 1fr); }
+  .cal.days-7 { grid-template-columns: repeat(7, 1fr); }
+  .cal.days-8 { grid-template-columns: repeat(8, 1fr); }
+  .cal .d { background: #FFF; border: 1px solid var(--rule); padding: 12px 12px 14px; border-top: 3px solid var(--ink-mute); min-width: 0; }
+  .cal .d.live { border-top-color: var(--terracotta); }
+  .cal .d.cocoon { border-top-color: var(--teal); background: #F3F6F5; }
+  .cal .d .dow { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-mute); font-weight: 700; }
+  .cal .d .date { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; margin-top: 2px; }
+  .cal .d .what { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 10px; }
+  .cal .d.live .what { color: var(--terracotta); }
+  .cal .d.cocoon .what { color: var(--teal); }
+  .cal .d .desc { font-size: 12px; color: var(--ink-soft); line-height: 1.4; margin-top: 4px; }
+  @media (max-width: 900px) {
+    .cal.days-5, .cal.days-6, .cal.days-7, .cal.days-8 { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* OPTION TOGGLE (A/B) */
+  .opt-toggle { display: inline-flex; border: 1px solid var(--ink); border-radius: 100px; padding: 3px; gap: 3px; margin-top: 8px; }
+  .opt-toggle button {
+    border: 0; background: transparent; font: inherit; font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; padding: 8px 16px; border-radius: 100px; cursor: pointer; color: var(--ink);
+  }
+  .opt-toggle button[aria-pressed="true"] { background: var(--terracotta); color: #FFF; }
+  .opt-panel { display: none; }
+  .opt-panel.active { display: block; }
+
+  .pending { display: inline-block; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700;
+    color: var(--terracotta); border: 1px solid var(--terracotta); padding: 4px 8px; white-space: nowrap; }
+  .breakdown td .sub { display: block; font-size: 12px; color: var(--ink-mute); margin-top: 2px; }
+  .breakdown tr.pending-row td { background: #FFF7F5; }
+  .breakdown tr.total td .plus { font-size: 12px; font-weight: 600; opacity: 0.9; display: block; margin-top: 4px; letter-spacing: 0; }
+  .breakdown .scroll { overflow-x: auto; }
+
+  /* COMPARE CARDS */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+  .ccard { background: #FFF; border: 1px solid var(--rule); display: flex; flex-direction: column; }
+  .ccard .photo img { aspect-ratio: 16/10; }
+  .ccard .body { padding: 28px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+  .ccard h3 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+  .ccard .where { font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-soft); font-weight: 700; }
+  .ccard ul { margin: 0; padding-left: 18px; color: var(--ink-soft); font-size: 15px; line-height: 1.5; }
+  .ccard .prices { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: auto; padding-top: 18px; border-top: 1px solid var(--rule); }
+  .ccard .prices .k { font-size: 10px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-mute); font-weight: 700; }
+  .ccard .prices .v { font-size: 24px; font-weight: 700; color: var(--terracotta); letter-spacing: -0.02em; line-height: 1.1; margin-top: 4px; }
+  .ccard .prices .n { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+  @media (max-width: 900px) { .compare { grid-template-columns: 1fr; } }
+
+  /* Q&A MATRIX */
+  .matrix { width: 100%; border-collapse: collapse; background: #FFF; border: 1px solid var(--rule); font-size: 14px; }
+  .matrix th, .matrix td { padding: 18px 20px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule-soft); }
+  .matrix thead th { background: var(--ink); color: var(--cream); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; }
+  .matrix tbody th { width: 22%; font-weight: 700; font-size: 14px; }
+  .matrix tbody th .n { display: block; color: var(--terracotta); font-size: 11px; letter-spacing: 0.16em; margin-bottom: 4px; }
+  .matrix td { color: var(--ink-soft); line-height: 1.55; width: 39%; }
+  .matrix td strong { color: var(--ink); }
+  .matrix-wrap { overflow-x: auto; margin-top: 40px; }
+  @media (max-width: 800px) {
+    .matrix thead { display: none; }
+    .matrix, .matrix tbody, .matrix tr, .matrix th, .matrix td { display: block; width: 100%; }
+    .matrix tr { border-bottom: 2px solid var(--rule); }
+    .matrix td::before { content: attr(data-casa); display: block; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terracotta); font-weight: 700; margin-bottom: 4px; }
+  }
+
+  /* DOWNLOADS */
+  .dl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
+  .dl { background: #FFF; border: 1px solid var(--rule); padding: 24px; display: flex; flex-direction: column; gap: 10px; color: var(--ink); text-decoration: none; transition: border-color 200ms ease, transform 200ms ease; }
+  .dl:hover { border-color: var(--terracotta); text-decoration: none; transform: translateY(-2px); }
+  .dl .k { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--terracotta); }
+  .dl .t { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+  .dl .s { font-size: 13px; color: var(--ink-soft); }
+  .dl .go { margin-top: auto; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .dl.primary { background: var(--terracotta); color: #FFF; border-color: var(--terracotta); }
+  .dl.primary .k, .dl.primary .s { color: rgba(255,255,255,0.9); }
+  @media (max-width: 900px) { .dl-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .dl-grid { grid-template-columns: 1fr; } }
+
+  .plan-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .plan-list li { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--rule-soft); font-size: 15px; }
+  .plan-list li .lvl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; font-weight: 700; color: var(--terracotta); padding-top: 3px; }
+  .plan-list li .lvl.boh { color: var(--teal); }
+  .plan-list li span.d { color: var(--ink-soft); }
+  @media (max-width: 520px) { .plan-list li { grid-template-columns: 1fr; gap: 4px; } }
+
+  .lightbox-nav { position: fixed; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border: 0; border-radius: 50%;
+    background: rgba(255,255,255,0.10); color: #FFF; font-size: 26px; cursor: pointer; }
+  .lightbox-nav:hover { background: rgba(255,255,255,0.2); }
+  .lightbox-nav.prev { left: 18px; } .lightbox-nav.next { right: 18px; }
+
+  section { scroll-margin-top: 70px; }
+  @media (max-width: 600px) {
+    .breakdown th:nth-child(3), .breakdown td:nth-child(3) { display: none; }
+    .breakdown td.qty { width: 36px; }
+    .opt-toggle button { padding: 7px 12px; }
+    .divider-label { grid-template-columns: 1fr auto; }
+    .divider-label .line { display: none; }
+  }
+  @media (max-width: 520px) {
+    .cta-pill { white-space: normal; text-align: center; }
+    .pending { white-space: normal; }
+    .breakdown table { font-size: 13px; }
+    .breakdown th, .breakdown td { padding: 10px 10px; }
+  }
+  @media (max-width: 800px) {
+    .matrix tbody th, .matrix td { width: 100% !important; }
+    .matrix tbody th { background: var(--cream-warm); }
+  }
+  @media (max-width: 600px) {
+    .breakdown table { table-layout: fixed; }
+    .breakdown th:nth-child(1) { width: 62%; }
+    .breakdown th.qty { width: 12%; }
+    .breakdown th:nth-child(4) { width: 26%; }
+    .breakdown td.amount { word-break: break-word; }
+  }
+  @media (max-width: 600px) { .pending { letter-spacing: 0.06em; padding: 3px 5px; } }
+
+  .cal.days-11, .cal.days-12 { grid-template-columns: repeat(6, 1fr); }
+  @media (max-width: 900px) { .cal.days-11, .cal.days-12 { grid-template-columns: repeat(2, 1fr); } }
+
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-brand">
+      <span class="cocoon">
+        <img src="img/cocoon/mark-128.png" alt="Cocoon" class="logomark" />
+        <img src="img/cocoon/wordmark-320.png" alt="cocoon" class="wordmark" />
+      </span>
+      <span class="divider" aria-hidden="true"></span>
+      <span class="partner">The Experiential <span style="color: var(--ink-soft); font-weight: 400;">· Holiday activation</span></span>
+    </div>
+    <div class="topbar-meta">Proposal · Nov 14–25, 2026 · Manhattan</div>
+  </div>
+</header>
+
+<!-- COVER -->
+<section class="cover full">
+  <div class="cover-grid">
+    <div class="cover-text">
+      <div>
+        <div style="display: inline-flex; align-items: center; gap: 10px; background: var(--terracotta); color: #FFF; padding: 8px 16px; border-radius: 100px; font-size: 11px; letter-spacing: 0.18em; font-weight: 700; text-transform: uppercase;">
+          <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #FFF;"></span>
+          Proposal · two townhouses
+        </div>
+        <h1 class="title" style="margin-top:24px;">A holiday house,<br/>two ways.<br/><span style="color:var(--terracotta)">November 20–21.</span></h1>
+        <p class="lede" style="margin-top:32px; max-width: 520px;">Casa Joy in Murray Hill and Casa Mas on the Upper East Side — two Manhattan townhouses, both tentatively held for your dates. Every cost for Option A and Option B is below, laid out the same way for both houses so you can compare them line by line.</p>
+        <div style="display:flex; gap: 12px; flex-wrap: wrap; margin-top: 28px;">
+          <a href="#compare" class="cta-pill terracotta">Compare the two ↓</a>
+          <a href="#downloads" class="cta-pill">Download photos &amp; plans</a>
+        </div>
+      </div>
+      <div class="cover-meta">
+        <div><strong>Prepared for</strong> &nbsp;Mia Vitale · The Experiential</div>
+        <div><strong>Programme</strong> &nbsp;Nov 20 content shoot + creator preview · Nov 21 public day</div>
+        <div><strong>Option A</strong> &nbsp;2 load-in · 2 live · 1 load-out (Nov 18–22)</div>
+        <div><strong>Option B</strong> &nbsp;3 load-in · 2 live · 1 load-out (Nov 17–22)</div>
+        <div><strong>Houses</strong> &nbsp;Casa Joy · Casa Mas</div>
+        <div><strong>Prepared by</strong> &nbsp;Eduard Monteagudo · Andres Tovar · Cocoon Flex Spaces</div>
+        <div><strong>Date</strong> &nbsp;September 29, 2026</div>
+      </div>
+    </div>
+    <div class="cover-image">
+      <img src="img/casa-mas/f1-02-grand-staircase.jpg" alt="Casa Mas — curved marble staircase in the entrance hall" />
+    </div>
+  </div>
+</section>
+
+<!-- NOTE -->
+<section id="note">
+  <div class="two-col">
+    <div>
+      <div class="superhead">A note from Cocoon</div>
+      <h2 class="headline" style="margin-top:14px;">Mia — thanks for the time on our call. Here's everything you asked for on Sept 15, for both houses and both date scenarios.</h2>
+    </div>
+    <div>
+      <div class="note body">
+        <p>You asked for each scenario to include <strong>all costs, broken out</strong>, so every number below is a line item, and the ten points from your email are answered side by side <a href="#questions">further down</a>.</p>
+        <p><strong>To compare the two houses fairly:</strong> Casa Joy is furnished and full of art, so our art handlers need three days before your load-in to clear it and three days after your load-out to put it back. Those six days and the art handlers' cost are priced in. Casa Mas has no furniture, so it needs none of those days and has no furniture-handling cost.</p>
+        <p>Both houses come with a Cocoon manager on site for the whole run. Security and crowd control at the entrance and inside are required at both houses; we'll quote them once headcount, hours and flow are set. If you need parking permits, Cocoon handles those too.</p>
+        <div class="signature">— Eduard &amp; Andres, Cocoon Flex Spaces</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE BRIEF -->
+<section class="full" id="brief">
+  <div class="inner">
+    <div class="superhead">The brief, as we understand it</div>
+    <h2 class="title" style="font-size: clamp(34px, 5vw, 60px); max-width: 1100px; margin-top: 18px;">A Manhattan townhouse where every room is a styled, shoppable holiday set: one day of content and creators, one day open to the public.</h2>
+  </div>
+  <div class="inner" style="margin-top: 48px;">
+    <div class="stat-grid">
+      <div class="stat"><div class="num">2</div><div class="label">Live days<br/>Nov 20 · Nov 21</div></div>
+      <div class="stat"><div class="num">30–40</div><div class="label">Creators at the<br/>Nov 20 evening preview</div></div>
+      <div class="stat"><div class="num">Timed</div><div class="label">Public entry on Nov 21<br/>QR shopping · photos with Santa</div></div>
+      <div class="stat"><div class="num">A / B</div><div class="label">5 or 6 client days<br/>on the calendar</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section id="compare">
+  <div class="superhead">At a glance</div>
+  <h2 class="headline" style="margin-top:14px; max-width: 900px;">Two houses, compared the same way. Casa Joy's totals include clearing and resetting the house; security and crowd control will be added to both once quoted.</h2>
+  <div class="compare">
+    <article class="ccard">
+      <div class="photo"><img src="img/casa-joy/cleared-02-living-room-piano.jpg" alt="Casa Joy — parlor-floor living room, visualised with furniture cleared" /><span class="floor-tag">Casa Joy · visualised cleared</span></div>
+      <div class="body">
+        <div class="where">01 · Murray Hill · East 35th Street</div>
+        <h3>Casa Joy</h3>
+        <ul>
+          <li>Historic five-level townhouse with an English garden and a rose garden</li>
+          <li>Hand-painted walls, restored 1840s chandeliers, art-deco staircase, five fireplaces</li>
+          <li>Street-level entry · small passenger elevator · top floor kept as back-of-house</li>
+          <li>Furnished · all furniture and art on the activation floors removed and reset by our art handlers</li>
+        </ul>
+        <div class="prices">
+          <div><div class="k">Option A · 11 calendar days</div><div class="v">$313.1K</div><div class="n">+ security &amp; crowd control (quote pending)</div></div>
+          <div><div class="k">Option B · 12 calendar days</div><div class="v">$336.8K</div><div class="n">+ security &amp; crowd control (quote pending)</div></div>
+        </div>
+        <a href="#casa-joy" class="cta-pill" style="align-self: flex-start;">See Casa Joy ↓</a>
+      </div>
+    </article>
+    <article class="ccard">
+      <div class="photo"><img src="img/casa-mas/f1-01-entrance-hall.jpg" alt="Casa Mas — entrance hall with inlaid marble floor" /><span class="floor-tag">Casa Mas · Floor 1</span></div>
+      <div class="body">
+        <div class="where">02 · Upper East Side · off Fifth Avenue</div>
+        <h3>Casa Mas</h3>
+        <ul>
+          <li>Landmark Italianate mansion · Floors 1 + 2 in exclusive use (Floor 3 available as an add-on)</li>
+          <li>Marble entrance hall, curved grand staircase, indoor courtyard, wood-panelled library and dining room</li>
+          <li>Unfurnished · no furniture handling, no removal/reset days</li>
+          <li>Up to 205 guests + staff across Floors 1 + 2 (fire code) · built-in 1,200A power</li>
+        </ul>
+        <div class="prices">
+          <div><div class="k">Option A · 5 days</div><div class="v">$325.5K</div><div class="n">+ security &amp; crowd control (quote pending)</div></div>
+          <div><div class="k">Option B · 6 days</div><div class="v">$388.6K</div><div class="n">+ security &amp; crowd control (quote pending)</div></div>
+        </div>
+        <a href="#casa-mas" class="cta-pill" style="align-self: flex-start;">See Casa Mas ↓</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =================== CASA JOY =================== -->
+<section id="casa-joy" data-lightbox>
+  <div class="casa-header">
+    <div class="casa-num">01</div>
+    <div>
+      <div class="tag">Murray Hill · East 35th Street · 5 levels + garden</div>
+      <h2>Casa Joy</h2>
+    </div>
+  </div>
+  <div class="two-col">
+    <div>
+      <p class="lede">A painter's townhouse with hand-painted walls, restored chandeliers, an art-deco staircase, a hammam-style bath and two gardens. It already has the warmth of a holiday home, so your set dressing has a lot to work with.</p>
+      <p class="body" style="color: var(--ink-soft);">Following our call, we'd clear the activation floors completely and keep the top-floor studio as your back-of-house: crew base, storage and green room. That limits how much has to be moved and keeps the most delicate artwork out of the way.</p>
+    </div>
+    <div>
+      <ul class="plan-list">
+        <li><span class="lvl">Parlor</span><span>Entrance &amp; foyer, grand hall with fountain, formal dining room <span class="d">· guest entry and arrival moment</span></span></li>
+        <li><span class="lvl">Level 2</span><span>Living room with grand piano, library with fireplace <span class="d">· styled rooms</span></span></li>
+        <li><span class="lvl">Level 3</span><span>Primary bedroom, hammam-style bath suite <span class="d">· styled rooms</span></span></li>
+        <li><span class="lvl">Garden level</span><span>Kitchen with island, garden room, English garden + rose garden <span class="d">· styled rooms · preferred load-in route</span></span></li>
+        <li><span class="lvl boh">Top floor</span><span>Painting studio + office <span class="d">· back-of-house (not cleared)</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div><div class="k">Entry</div><div class="v">Street level · garden-level load-in</div></div>
+    <div><div class="k">Elevator</div><div class="v">Passenger · 3′ × 4′ · 950 lb</div></div>
+    <div><div class="k">Furniture</div><div class="v">Removed + reset by art handlers</div></div>
+    <div><div class="k">On site</div><div class="v">Studio Manager, every day</div></div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Casa Joy photos">
+    <button class="tab" role="tab" aria-selected="true" data-gallery="joy-cleared">Cleared for your build</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="joy-today">As furnished today</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="joy-activations">Past activations here</button>
+  </div>
+  <div class="gallery active" id="joy-cleared">
+    <p class="gallery-note" style="grid-column: 1 / -1;"><strong>Please note:</strong> these are digital visualisations of the rooms with furniture and art removed, to help you plan the build. The real-world result can be confirmed at a walkthrough.</p>
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-01-parlor-staircase.jpg" alt="Art-deco staircase" /><figcaption>Art-deco staircase</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-02-living-room-piano.jpg" alt="Living room · Level 2" /><figcaption>Living room · Level 2</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-03-living-room-fireplace.jpg" alt="Living room fireplace" /><figcaption>Living room fireplace</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-04-garden-level-hall.jpg" alt="Garden-level room" /><figcaption>Garden-level room</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-05-kitchen.jpg" alt="Kitchen · garden level" /><figcaption>Kitchen · garden level</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-06-kitchen-stone-wall.jpg" alt="Kitchen stone wall" /><figcaption>Kitchen stone wall</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-08-hand-painted-wall.jpg" alt="Hand-painted walls" /><figcaption>Hand-painted walls</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-09-garden.jpg" alt="English garden" /><figcaption>English garden</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/cleared-10-garden-trellis.jpg" alt="Garden trellis" /><figcaption>Garden trellis</figcaption></figure>
+  </div>
+  <div class="gallery" id="joy-today">
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/casa-joy/today-01-living-room-fireplace.jpg" alt="Living room · today" /><figcaption>Living room · today</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-02-living-room-piano.jpg" alt="Living room with piano · today" /><figcaption>Living room with piano · today</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-03-dining-room.jpg" alt="Formal dining room · today" /><figcaption>Formal dining room · today</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-04-library.jpg" alt="Library · today" /><figcaption>Library · today</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-05-staircase.jpg" alt="Staircase" /><figcaption>Staircase</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-06-library-fireplace.jpg" alt="Library fireplace" /><figcaption>Library fireplace</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-07-primary-bedroom.jpg" alt="Primary bedroom · Level 3" /><figcaption>Primary bedroom · Level 3</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-08-primary-bath.jpg" alt="Hammam-style bath · Level 3" /><figcaption>Hammam-style bath · Level 3</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/today-09-top-floor-studio-boh.jpg" alt="Top-floor studio · back-of-house" /><figcaption>Top-floor studio · back-of-house</figcaption></figure>
+  </div>
+  <div class="gallery" id="joy-activations">
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/activation-01-balloon-ceiling.jpg" alt="Brand activation · balloon ceiling" /><figcaption>Brand activation · balloon ceiling</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-joy/activation-02-product-launch-racks.jpg" alt="Product launch · rails + styling" /><figcaption>Product launch · rails + styling</figcaption></figure>
+  </div>
+
+  <div style="margin-top: 72px;">
+    <div class="divider-label"><span class="text">Calendar &amp; pricing</span><span class="line"></span>
+      <div class="opt-toggle" data-scope="joy"><button aria-pressed="true" data-opt="A">Option A</button><button aria-pressed="false" data-opt="B">Option B</button></div>
+    </div>
+    <div class="opt-panel active" data-scope="joy" data-opt="A">
+<p class="body" style="color:var(--ink-soft); margin: 0 0 6px;"><strong style="color:var(--ink)">Option A</strong> · 5 client days + 6 Cocoon-only days = 11 days on the calendar (Nov 15 – Nov 25).</p><div class="cal days-11"><div class="d cocoon"><div class="dow">Sun</div><div class="date">Nov 15</div><div class="what">Cocoon prep day 1/3</div><div class="desc">Furniture & art removal by our art handlers · no client access</div></div><div class="d cocoon"><div class="dow">Mon</div><div class="date">Nov 16</div><div class="what">Cocoon prep day 2/3</div><div class="desc">Furniture & art removal by our art handlers · no client access</div></div><div class="d cocoon"><div class="dow">Tue</div><div class="date">Nov 17</div><div class="what">Cocoon prep day 3/3</div><div class="desc">Furniture & art removal by our art handlers · no client access</div></div><div class="d load"><div class="dow">Wed</div><div class="date">Nov 18</div><div class="what">Load-in</div><div class="desc">Your production team on site</div></div><div class="d load"><div class="dow">Thu</div><div class="date">Nov 19</div><div class="what">Load-in</div><div class="desc">Your production team on site</div></div><div class="d live"><div class="dow">Fri</div><div class="date">Nov 20</div><div class="what">Live</div><div class="desc">Content shoot · evening creator preview (30–40)</div></div><div class="d live"><div class="dow">Sat</div><div class="date">Nov 21</div><div class="what">Live</div><div class="desc">Open to the public · timed entry</div></div><div class="d load"><div class="dow">Sun</div><div class="date">Nov 22</div><div class="what">Load-out</div><div class="desc">Your production team strikes</div></div><div class="d cocoon"><div class="dow">Mon</div><div class="date">Nov 23</div><div class="what">Cocoon reset day 1/3</div><div class="desc">Furniture & art reset by our art handlers · no client access</div></div><div class="d cocoon"><div class="dow">Tue</div><div class="date">Nov 24</div><div class="what">Cocoon reset day 2/3</div><div class="desc">Furniture & art reset by our art handlers · no client access</div></div><div class="d cocoon"><div class="dow">Wed</div><div class="date">Nov 25</div><div class="what">Cocoon reset day 3/3</div><div class="desc">Furniture & art reset by our art handlers · no client access</div></div></div><div class="breakdown"><div class="scroll"><table>
+<thead><tr><th>Line item</th><th class="qty">Qty</th><th class="amount">Rate</th><th class="amount">Amount</th></tr></thead>
+<tbody><tr><td><strong>Load-in & load-out days</strong><span class="sub">12-hour day · $1,800/hr</span></td><td class="qty">3</td><td class="amount">$21,600</td><td class="amount">$64,800</td></tr><tr><td><strong>Live event days</strong><span class="sub">12-hour day · $2,880/hr</span></td><td class="qty">2</td><td class="amount">$34,560</td><td class="amount">$69,120</td></tr><tr><td><strong>Cocoon prep + reset days</strong><span class="sub">3 days to clear + 3 days to reset · house held, no client access · reduced flat day rate</span></td><td class="qty">6</td><td class="amount">$15,000</td><td class="amount">$90,000</td></tr><tr><td><strong>On-site Studio Manager</strong><span class="sub">Every day of the run · 14 hrs · $120/hr</span></td><td class="qty">11</td><td class="amount">$1,680</td><td class="amount">$18,480</td></tr><tr><td><strong>Cleaning services</strong><span class="sub">Before check-in · after every day's check-out · final clean after reset · trash removal included</span></td><td class="qty">7</td><td class="amount">$400</td><td class="amount">$2,800</td></tr><tr><td><strong>Floor & wall protection</strong><span class="sub">Oak floors, entry & stairs on the activation floors · installed and removed by our approved vendor, 2 rounds (estimate)</span></td><td class="qty">1</td><td class="amount">$9,800</td><td class="amount">$9,800</td></tr><tr><td><strong>Furniture &amp; art removal, storage and reset</strong><span class="sub">Specialist fine-art handlers · 8 technicians × 3 days to clear + 3 days to reset · packing materials included · pieces stored on site where the house allows; any off-site storage confirmed after the walkthrough</span></td><td class="qty">1</td><td class="amount">$58,074.29</td><td class="amount">$58,074.29</td></tr><tr class="pending-row"><td><strong>Security &amp; crowd control · required</strong><span class="sub">Licensed guards at the entrance and inside the house on live days · queue and headcount management · quoted once headcount, hours and flow are set</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount"><span class="pending">Quote pending</span></td></tr><tr class="pending-row"><td><strong>Parking permits · if required</strong><span class="sub">Handled by Cocoon · similar activations run about $2,500 for the whole booking · final cost set by the Mayor's Office once the permitted area is submitted</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount"><span class="pending">Est. $2,500</span></td></tr>
+<tr class="total"><td><span class="label">Option A · Casa Joy · venue total</span><span class="plus">+ security &amp; crowd control, parking permits if required</span></td><td></td><td></td><td class="amount">$313,074.29</td></tr>
+</tbody></table></div></div><p class="caption" style="margin-top:14px;">50% deposit on signing: $156,537.14 · refundable security deposit (25%): $78,268.57 · balance 30 days before load-in · wire/ACH, or card +3.7%</p>
+    </div>
+    <div class="opt-panel" data-scope="joy" data-opt="B">
+<p class="body" style="color:var(--ink-soft); margin: 0 0 6px;"><strong style="color:var(--ink)">Option B</strong> · 6 client days + 6 Cocoon-only days = 12 days on the calendar (Nov 14 – Nov 25).</p><div class="cal days-12"><div class="d cocoon"><div class="dow">Sat</div><div class="date">Nov 14</div><div class="what">Cocoon prep day 1/3</div><div class="desc">Furniture & art removal by our art handlers · no client access</div></div><div class="d cocoon"><div class="dow">Sun</div><div class="date">Nov 15</div><div class="what">Cocoon prep day 2/3</div><div class="desc">Furniture & art removal by our art handlers · no client access</div></div><div class="d cocoon"><div class="dow">Mon</div><div class="date">Nov 16</div><div class="what">Cocoon prep day 3/3</div><div class="desc">Furniture & art removal by our art handlers · no client access</div></div><div class="d load"><div class="dow">Tue</div><div class="date">Nov 17</div><div class="what">Load-in</div><div class="desc">Your production team on site</div></div><div class="d load"><div class="dow">Wed</div><div class="date">Nov 18</div><div class="what">Load-in</div><div class="desc">Your production team on site</div></div><div class="d load"><div class="dow">Thu</div><div class="date">Nov 19</div><div class="what">Load-in</div><div class="desc">Your production team on site</div></div><div class="d live"><div class="dow">Fri</div><div class="date">Nov 20</div><div class="what">Live</div><div class="desc">Content shoot · evening creator preview (30–40)</div></div><div class="d live"><div class="dow">Sat</div><div class="date">Nov 21</div><div class="what">Live</div><div class="desc">Open to the public · timed entry</div></div><div class="d load"><div class="dow">Sun</div><div class="date">Nov 22</div><div class="what">Load-out</div><div class="desc">Your production team strikes</div></div><div class="d cocoon"><div class="dow">Mon</div><div class="date">Nov 23</div><div class="what">Cocoon reset day 1/3</div><div class="desc">Furniture & art reset by our art handlers · no client access</div></div><div class="d cocoon"><div class="dow">Tue</div><div class="date">Nov 24</div><div class="what">Cocoon reset day 2/3</div><div class="desc">Furniture & art reset by our art handlers · no client access</div></div><div class="d cocoon"><div class="dow">Wed</div><div class="date">Nov 25</div><div class="what">Cocoon reset day 3/3</div><div class="desc">Furniture & art reset by our art handlers · no client access</div></div></div><div class="breakdown"><div class="scroll"><table>
+<thead><tr><th>Line item</th><th class="qty">Qty</th><th class="amount">Rate</th><th class="amount">Amount</th></tr></thead>
+<tbody><tr><td><strong>Load-in & load-out days</strong><span class="sub">12-hour day · $1,800/hr</span></td><td class="qty">4</td><td class="amount">$21,600</td><td class="amount">$86,400</td></tr><tr><td><strong>Live event days</strong><span class="sub">12-hour day · $2,880/hr</span></td><td class="qty">2</td><td class="amount">$34,560</td><td class="amount">$69,120</td></tr><tr><td><strong>Cocoon prep + reset days</strong><span class="sub">3 days to clear + 3 days to reset · house held, no client access · reduced flat day rate</span></td><td class="qty">6</td><td class="amount">$15,000</td><td class="amount">$90,000</td></tr><tr><td><strong>On-site Studio Manager</strong><span class="sub">Every day of the run · 14 hrs · $120/hr</span></td><td class="qty">12</td><td class="amount">$1,680</td><td class="amount">$20,160</td></tr><tr><td><strong>Cleaning services</strong><span class="sub">Before check-in · after every day's check-out · final clean after reset · trash removal included</span></td><td class="qty">8</td><td class="amount">$400</td><td class="amount">$3,200</td></tr><tr><td><strong>Floor & wall protection</strong><span class="sub">Oak floors, entry & stairs on the activation floors · installed and removed by our approved vendor, 2 rounds (estimate)</span></td><td class="qty">1</td><td class="amount">$9,800</td><td class="amount">$9,800</td></tr><tr><td><strong>Furniture &amp; art removal, storage and reset</strong><span class="sub">Specialist fine-art handlers · 8 technicians × 3 days to clear + 3 days to reset · packing materials included · pieces stored on site where the house allows; any off-site storage confirmed after the walkthrough</span></td><td class="qty">1</td><td class="amount">$58,074.29</td><td class="amount">$58,074.29</td></tr><tr class="pending-row"><td><strong>Security &amp; crowd control · required</strong><span class="sub">Licensed guards at the entrance and inside the house on live days · queue and headcount management · quoted once headcount, hours and flow are set</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount"><span class="pending">Quote pending</span></td></tr><tr class="pending-row"><td><strong>Parking permits · if required</strong><span class="sub">Handled by Cocoon · similar activations run about $2,500 for the whole booking · final cost set by the Mayor's Office once the permitted area is submitted</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount"><span class="pending">Est. $2,500</span></td></tr>
+<tr class="total"><td><span class="label">Option B · Casa Joy · venue total</span><span class="plus">+ security &amp; crowd control, parking permits if required</span></td><td></td><td></td><td class="amount">$336,754.29</td></tr>
+</tbody></table></div></div><p class="caption" style="margin-top:14px;">50% deposit on signing: $168,377.14 · refundable security deposit (25%): $84,188.57 · balance 30 days before load-in · wire/ACH, or card +3.7%</p>
+    </div>
+    <div class="expansion">
+      <div class="tag">Overtime &amp; changes</div>
+      <p>Each day is a 12-hour window. Extra hours are billed at 1.5× the hourly rate in 1-hour blocks: <strong>$2,700/hr</strong> on load-in/out days and <strong>$4,320/hr</strong> on live days, plus the Studio Manager at $180/hr. Overtime has to be requested in writing at least an hour before check-out.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CASA MAS =================== -->
+<section id="casa-mas" data-lightbox>
+  <div class="casa-header">
+    <div class="casa-num">02</div>
+    <div>
+      <div class="tag">Upper East Side · East 63rd Street, off Fifth Avenue · Floors 1 + 2</div>
+      <h2>Casa Mas</h2>
+    </div>
+  </div>
+  <div class="two-col">
+    <div>
+      <p class="lede">An Italianate mansion just off Fifth Avenue, steps from Central Park, with a marble entrance hall, curved grand staircase, indoor courtyard, and panelled library and dining room. The house is unfurnished, so your team starts building from day one with no furniture to move.</p>
+      <p class="body" style="color: var(--ink-soft);">We'd propose Floors 1 + 2 in exclusive use. Ownership has reviewed a public-facing activation and is supportive, provided there's a proper crowd-control plan. We've outlined one <a href="#public-day">below</a>.</p>
+    </div>
+    <div>
+      <ul class="plan-list">
+        <li><span class="lvl">Floor 1</span><span>Entrance hall, grand staircase, parlor, library, dining room, stained-glass study, courtyard, kitchen &amp; pantry</span></li>
+        <li><span class="lvl">Floor 2</span><span>Hallways, Black &amp; White room, front sitting room, Tan &amp; White room, Silver Crest room, front bedroom</span></li>
+        <li><span class="lvl boh">Floor 3</span><span>Optional add-on <span class="d">· green room, storage or extra styled rooms · +$10,125/day</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div><div class="k">Capacity (fire code)</div><div class="v">176 ground floor · 205 across F1 + F2</div></div>
+    <div><div class="k">Access</div><div class="v">Ramps + passenger elevator to all floors</div></div>
+    <div><div class="k">Power</div><div class="v">1,200A 3-phase camlock · 600A distro</div></div>
+    <div><div class="k">Street</div><div class="v">Vehicles 8 am – 10 pm on 63rd St</div></div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Casa Mas photos">
+    <button class="tab" role="tab" aria-selected="true" data-gallery="mas-f1">Floor 1</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="mas-f2">Floor 2</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="mas-more">Floors 3 &amp; 4 · add-ons</button>
+  </div>
+  <div class="gallery active" id="mas-f1">
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/casa-mas/f1-01-entrance-hall.jpg" alt="Entrance hall · Floor 1" /><figcaption>Entrance hall · Floor 1</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f1-02-grand-staircase.jpg" alt="Grand staircase · Floor 1" /><figcaption>Grand staircase · Floor 1</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f1-04-dining-room.jpg" alt="Dining room · Floor 1" /><figcaption>Dining room · Floor 1</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f1-05-library.jpg" alt="Library · Floor 1" /><figcaption>Library · Floor 1</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f1-06-courtyard.jpg" alt="Indoor courtyard · Floor 1" /><figcaption>Indoor courtyard · Floor 1</figcaption></figure>
+  </div>
+  <div class="gallery" id="mas-f2">
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f2-01-black-white-room.jpg" alt="Black &amp; White room · Floor 2" /><figcaption>Black &amp; White room · Floor 2</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f2-02-blue-room.jpg" alt="Front sitting room · Floor 2" /><figcaption>Front sitting room · Floor 2</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f2-03-hallway.jpg" alt="Hallway · Floor 2" /><figcaption>Hallway · Floor 2</figcaption></figure>
+  </div>
+  <div class="gallery" id="mas-more">
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f3-01-jungle-room.jpg" alt="Jungle room · Floor 3 (add-on)" /><figcaption>Jungle room · Floor 3 (add-on)</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f3-02-mosaic-room.jpg" alt="Mosaic room · Floor 3 (add-on)" /><figcaption>Mosaic room · Floor 3 (add-on)</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/casa-mas/f4-01-ballroom.jpg" alt="Ballroom · Floor 4 (on request)" /><figcaption>Ballroom · Floor 4 (on request)</figcaption></figure>
+  </div>
+  <p style="margin-top: 20px;"><a href="docs/Casa-Mas-Floor-Plans.pdf" class="cta-pill" target="_blank" rel="noopener">Open Casa Mas floor plans (PDF) ↗</a></p>
+
+  <div style="margin-top: 72px;">
+    <div class="divider-label"><span class="text">Calendar &amp; pricing</span><span class="line"></span>
+      <div class="opt-toggle" data-scope="mas"><button aria-pressed="true" data-opt="A">Option A</button><button aria-pressed="false" data-opt="B">Option B</button></div>
+    </div>
+    <div class="opt-panel active" data-scope="mas" data-opt="A">
+<p class="body" style="color:var(--ink-soft); margin: 0 0 6px;"><strong style="color:var(--ink)">Option A</strong> · 5 days on the calendar (Nov 18 – Nov 22) · no prep or reset days needed.</p><div class="cal days-5"><div class="d load"><div class="dow">Wed</div><div class="date">Nov 18</div><div class="what">Load-in</div><div class="desc">Floor protection installed at call time</div></div><div class="d load"><div class="dow">Thu</div><div class="date">Nov 19</div><div class="what">Load-in</div><div class="desc">Your production team on site</div></div><div class="d live"><div class="dow">Fri</div><div class="date">Nov 20</div><div class="what">Live</div><div class="desc">Content shoot · evening creator preview (30–40)</div></div><div class="d live"><div class="dow">Sat</div><div class="date">Nov 21</div><div class="what">Live</div><div class="desc">Open to the public · timed entry</div></div><div class="d load"><div class="dow">Sun</div><div class="date">Nov 22</div><div class="what">Load-out</div><div class="desc">Strike · 3 hrs next-morning load-out at no charge</div></div></div><div class="breakdown"><div class="scroll"><table>
+<thead><tr><th>Line item</th><th class="qty">Qty</th><th class="amount">Rate</th><th class="amount">Amount</th></tr></thead>
+<tbody><tr><td><strong>Space rental · Floor 1 + Floor 2</strong><span class="sub">Exclusive use · 12-hour day · events over 100 guests</span></td><td class="qty">5</td><td class="amount">$60,750</td><td class="amount">$303,750</td></tr><tr><td><strong>Electrical tie-in</strong><span class="sub">1,200A 3-phase camlock · distro box, cable & lunch boxes</span></td><td class="qty">5</td><td class="amount">$607.50</td><td class="amount">$3,037.50</td></tr><tr><td><strong>Cleaning services · Floors 1 + 2</strong><span class="sub">Ownership-approved vendor · before check-in and after every day's check-out</span></td><td class="qty">6</td><td class="amount">$1,350</td><td class="amount">$8,100</td></tr><tr><td><strong>Garbage removal</strong><span class="sub">Private hauler · est. 1 load/day · trued up after the event</span></td><td class="qty">5</td><td class="amount">$405</td><td class="amount">$2,025</td></tr><tr><td><strong>Floor & wall protection</strong><span class="sub">Marble + wood · installed and removed by the approved vendor, 2 rounds (estimate)</span></td><td class="qty">1</td><td class="amount">$8,548.80</td><td class="amount">$8,548.80</td></tr><tr><td><strong>On-site Cocoon Casa Manager</strong><span class="sub">Full run</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount">Included</td></tr><tr class="pending-row"><td><strong>Security &amp; crowd control · required</strong><span class="sub">Licensed guards at the entrance and inside the house on live days · queue and headcount management · quoted once headcount, hours and flow are set</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount"><span class="pending">Quote pending</span></td></tr><tr class="pending-row"><td><strong>Parking permits · if required</strong><span class="sub">Handled by Cocoon · similar activations run about $2,500 for the whole booking · final cost set by the Mayor's Office once the permitted area is submitted</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount"><span class="pending">Est. $2,500</span></td></tr>
+<tr class="total"><td><span class="label">Option A · Casa Mas · venue total</span><span class="plus">+ security &amp; crowd control, parking permits if required</span></td><td></td><td></td><td class="amount">$325,461.30</td></tr>
+</tbody></table></div></div><p class="caption" style="margin-top:14px;">50% deposit on signing: $162,730.65 · refundable security deposit (25%): $81,365.32 · balance 30 days before load-in · wire/ACH, or card +3.7%</p>
+    </div>
+    <div class="opt-panel" data-scope="mas" data-opt="B">
+<p class="body" style="color:var(--ink-soft); margin: 0 0 6px;"><strong style="color:var(--ink)">Option B</strong> · 6 days on the calendar (Nov 17 – Nov 22) · no prep or reset days needed.</p><div class="cal days-6"><div class="d load"><div class="dow">Tue</div><div class="date">Nov 17</div><div class="what">Load-in</div><div class="desc">Floor protection installed at call time</div></div><div class="d load"><div class="dow">Wed</div><div class="date">Nov 18</div><div class="what">Load-in</div><div class="desc">Your production team on site</div></div><div class="d load"><div class="dow">Thu</div><div class="date">Nov 19</div><div class="what">Load-in</div><div class="desc">Your production team on site</div></div><div class="d live"><div class="dow">Fri</div><div class="date">Nov 20</div><div class="what">Live</div><div class="desc">Content shoot · evening creator preview (30–40)</div></div><div class="d live"><div class="dow">Sat</div><div class="date">Nov 21</div><div class="what">Live</div><div class="desc">Open to the public · timed entry</div></div><div class="d load"><div class="dow">Sun</div><div class="date">Nov 22</div><div class="what">Load-out</div><div class="desc">Strike · 3 hrs next-morning load-out at no charge</div></div></div><div class="breakdown"><div class="scroll"><table>
+<thead><tr><th>Line item</th><th class="qty">Qty</th><th class="amount">Rate</th><th class="amount">Amount</th></tr></thead>
+<tbody><tr><td><strong>Space rental · Floor 1 + Floor 2</strong><span class="sub">Exclusive use · 12-hour day · events over 100 guests</span></td><td class="qty">6</td><td class="amount">$60,750</td><td class="amount">$364,500</td></tr><tr><td><strong>Electrical tie-in</strong><span class="sub">1,200A 3-phase camlock · distro box, cable & lunch boxes</span></td><td class="qty">6</td><td class="amount">$607.50</td><td class="amount">$3,645</td></tr><tr><td><strong>Cleaning services · Floors 1 + 2</strong><span class="sub">Ownership-approved vendor · before check-in and after every day's check-out</span></td><td class="qty">7</td><td class="amount">$1,350</td><td class="amount">$9,450</td></tr><tr><td><strong>Garbage removal</strong><span class="sub">Private hauler · est. 1 load/day · trued up after the event</span></td><td class="qty">6</td><td class="amount">$405</td><td class="amount">$2,430</td></tr><tr><td><strong>Floor & wall protection</strong><span class="sub">Marble + wood · installed and removed by the approved vendor, 2 rounds (estimate)</span></td><td class="qty">1</td><td class="amount">$8,548.80</td><td class="amount">$8,548.80</td></tr><tr><td><strong>On-site Cocoon Casa Manager</strong><span class="sub">Full run</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount">Included</td></tr><tr class="pending-row"><td><strong>Security &amp; crowd control · required</strong><span class="sub">Licensed guards at the entrance and inside the house on live days · queue and headcount management · quoted once headcount, hours and flow are set</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount"><span class="pending">Quote pending</span></td></tr><tr class="pending-row"><td><strong>Parking permits · if required</strong><span class="sub">Handled by Cocoon · similar activations run about $2,500 for the whole booking · final cost set by the Mayor's Office once the permitted area is submitted</span></td><td class="qty">—</td><td class="amount">—</td><td class="amount"><span class="pending">Est. $2,500</span></td></tr>
+<tr class="total"><td><span class="label">Option B · Casa Mas · venue total</span><span class="plus">+ security &amp; crowd control, parking permits if required</span></td><td></td><td></td><td class="amount">$388,573.80</td></tr>
+</tbody></table></div></div><p class="caption" style="margin-top:14px;">50% deposit on signing: $194,286.90 · refundable security deposit (25%): $97,143.45 · balance 30 days before load-in · wire/ACH, or card +3.7%</p>
+    </div>
+    <div class="expansion">
+      <div class="tag">Overtime, add-ons &amp; house rules</div>
+      <p>Each day is a 12-hour window. Overtime is <strong>$7,593.75/hr</strong> (1.5× the hourly rate) in 1-hour blocks. <strong>Floor 3 add-on: +$10,125/day.</strong> Floor 4 (ballroom) on request. Trucks can't arrive on 63rd Street before 8 am and must leave by 10 pm. Load-out can continue the next morning, with the first 3 hours free. No glitter, confetti or plastic snow anywhere in the house. Fog or snow machines need ownership sign-off and an FDNY permit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PUBLIC DAY =================== -->
+<section id="public-day">
+  <div class="two-col">
+    <div>
+      <div class="superhead">Nov 21 · the public day</div>
+      <h2 class="headline" style="margin-top:14px;">A queue on a residential block needs a plan. Here's ours.</h2>
+      <p class="body" style="color: var(--ink-soft);">Both houses sit on quiet residential streets. Timed ticketing has worked well at other public activations in our houses, and it's also what keeps the owners and neighbours on side.</p>
+      <p class="body" style="color: var(--ink-soft);"><strong style="color: var(--ink);">Parking permits, if you need them:</strong> Cocoon handles the application. Similar activations have run about $2,500 for the whole booking, but the Mayor's Office sets the final cost once we submit the size of the permitted area.</p>
+    </div>
+    <div>
+      <div class="walk" style="grid-template-columns: 1fr 1fr; margin-top: 0;">
+        <div class="step"><div class="step-num">01 · Timed entry</div><h4>Ticketed slots</h4><p>For example, 20–30 minute windows sized to the house's capacity, so the line outside stays short.</p></div>
+        <div class="step"><div class="step-num">02 · Queue</div><h4>Line along our frontage</h4><p>Kept within our own property line, sidewalk left clear, never in front of neighbouring buildings. On 63rd Street, nothing in front of 817 Fifth Avenue.</p></div>
+        <div class="step"><div class="step-num">03 · Door count</div><h4>Staffed entry + live headcount</h4><p>Security and crowd control are required at both houses, at the entrance and inside. Licensed guards keep a live count against the capacity cap and keep guests moving through the rooms.</p></div>
+        <div class="step"><div class="step-num">04 · Flow</div><h4>One-way route</h4><p>A single route through the styled rooms, down the stairs and out, with the elevator kept for accessibility and crew.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== YOUR 10 QUESTIONS =================== -->
+<section id="questions">
+  <div class="superhead">Your ten questions · answered for both houses</div>
+  <h2 class="headline" style="margin-top:14px; max-width: 900px;">Everything from your Sept 15 email, point by point.</h2>
+  <div class="matrix-wrap">
+    <table class="matrix">
+      <thead><tr><th>Question</th><th>Casa Joy</th><th>Casa Mas</th></tr></thead>
+      <tbody>
+<tr><th><span class="n">01</span>Base rental, what a “day” is, and overtime</th><td data-casa="Casa Joy"><strong>12-hour day.</strong> Load-in/out $1,800/hr ($21,600/day); live days $2,880/hr ($34,560/day). The Cocoon-only prep and reset days, when your team isn't in the house, are charged at a reduced flat $15,000/day. Overtime is 1.5× in 1-hour blocks: $2,700/hr on load days, $4,320/hr on live days.</td><td data-casa="Casa Mas"><strong>12-hour day,</strong> Floors 1 + 2 exclusive: $60,750/day ($5,062.50/hr). Overtime is $7,593.75/hr in 1-hour blocks. Vehicles on 63rd Street 8 am – 10 pm; the first 3 hours of next-morning load-out are free.</td></tr>
+<tr><th><span class="n">02</span>In-house staffing you're required to buy</th><td data-casa="Casa Joy"><strong>Cocoon Studio Manager,</strong> on site every day and included above. <strong>Security and crowd control are required</strong> at the entrance and inside the house on the live days; we'll quote them once headcount, hours and flow are confirmed. Fire guard, porters, bathroom attendants and coat check aren't required by the venue, and we can supply any of them through Super Concierge.</td><td data-casa="Casa Mas"><strong>Cocoon Casa Manager,</strong> included for the full run. <strong>Security and crowd control are required</strong> at the entrance and inside the house on the live days: licensed guards named on the COI, quoted once headcount, hours and flow are confirmed. Fire guard, porters, attendants and coat check aren't required by the venue.</td></tr>
+<tr><th><span class="n">03</span>Cleaning during and after, trash and garbage</th><td data-casa="Casa Joy">A clean before check-in, after every day's check-out and a final clean after the reset, with trash removal included. All priced above.</td><td data-casa="Casa Mas">A clean before check-in and after every day's check-out by ownership's approved vendor ($675/floor per clean, included). Garbage by private hauler at $405/load, estimated at one a day and trued up after the event. Food waste has to leave the building nightly.</td></tr>
+<tr><th><span class="n">04</span>Removing and storing existing furniture and art</th><td data-casa="Casa Joy"><strong>Required on the activation floors.</strong> A team of 8 fine-art handlers clears the house over 3 Cocoon prep days and resets it over 3 days after your load-out, with all packing materials. Their cost and the 6 days the house is held are both priced above. Pieces are stored on site where the house allows; if anything needs to go to off-site storage, we'll confirm it and its cost after the walkthrough.</td><td data-casa="Casa Mas"><strong>Not needed.</strong> The house is unfurnished, so there's no removal, storage or reset cost and no extra days.</td></tr>
+<tr><th><span class="n">05</span>Processing, admin, insurance and tax</th><td data-casa="Casa Joy">No admin fee. Wire/ACH is preferred; card payments carry a 3.7% processing fee. Space rental isn't subject to NY sales tax. COI with waiver of subrogation, naming Cocoon and the owner as additional insured, is due 2 pm two days before load-in. Every vendor on site needs one too.</td><td data-casa="Casa Mas">Same payment and tax terms. COI with waiver of subrogation, naming Cocoon and ownership as additional insured, with a <strong>minimum of $1M per occurrence plus $2M umbrella/excess</strong>. Every vendor on site needs a COI on the same terms.</td></tr>
+<tr><th><span class="n">06</span>Capacity by floor, private vs public</th><td data-casa="Casa Joy">Floor-by-floor numbers are being confirmed with the owner and will be shared before the walkthrough. The 30–40 creator preview fits comfortably. On the public day, timed entry keeps numbers inside the cap.</td><td data-casa="Casa Mas">Fire-code limits: <strong>176 on the ground floor, 205 across Floors 1 + 2</strong>, guests and staff combined. The creator preview fits easily. On the public day we'd plan for <strong>up to ~175 guests at a time</strong>, managed by timed entry.</td></tr>
+<tr><th><span class="n">07</span>ADA access and elevator, by floor</th><td data-casa="Casa Joy">Not ADA-compliant. Street-level entry, plus a small passenger elevator (3′ × 4′, 950 lb) that reaches every level and works for guests with limited mobility.</td><td data-casa="Casa Mas">Ramps at the front entrance and interior steps, plus a small passenger elevator connecting all floors. We'll go through any specific access needs at the scout.</td></tr>
+<tr><th><span class="n">08</span>Signage and façade branding</th><td data-casa="Casa Joy">Discreet, removable signage at the entrance is possible with the owner's approval; nothing can be fixed into the façade. No venue fee; fabrication is on your side.</td><td data-casa="Casa Mas"><strong>No exterior branding, lights or lifts on 63rd Street,</strong> and the façade can't be filmed. Interior branding is fine with removable fixings only. Any exterior exception needs ownership's written approval.</td></tr>
+<tr><th><span class="n">09</span>Power, WiFi and house AV</th><td data-casa="Casa Joy">Standard house power across three panels, with no tie-in; we'd review high-draw lighting at the scout. WiFi runs about 320 Mbps down and 4 Mbps up. For QR shopping and content uploads we recommend a dedicated line, which we can quote. No house speakers, TV or projector. There's a grand piano on site.</td><td data-casa="Casa Mas">1,200A 3-phase camlock tie-in with a 600A distro box, lunch boxes and cable, included per day. WiFi is 300/240 Mbps with partial coverage; a dedicated line up to 10 Gbps is available. No house speakers, TV or projector.</td></tr>
+<tr><th><span class="n">10</span>Deposit schedule and cancellation</th><td data-casa="Casa Joy">50% on signing and 50% 30 days before load-in. A <strong>refundable security deposit of 25%</strong> of the booking total is due on signing and returned within 30 business days after the event. Cancelling within 12 months of the event can forfeit the full payment. Rescheduling carries a 50% fee on the space rental.</td><td data-casa="Casa Mas">50% on signing and 50% 30 days before load-in. A <strong>refundable security deposit of 25%</strong> of the booking total is due on signing and returned within 30 business days after the event. Same cancellation terms.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- =================== SUPER CONCIERGE =================== -->
+<section class="full">
+  <div class="callout teal">
+    <div class="inner">
+      <div class="superhead" style="color: rgba(255,255,255,0.9);">Beyond the venue · one point of contact</div>
+      <h2 class="title" style="color: #FFF; margin-top: 18px; max-width: 1100px; font-size: clamp(30px, 4vw, 52px);">Required security and crowd control, dedicated WiFi for QR shopping, AV and lighting, catering for the creator evening, and porters and attendants, all available through Super Concierge.</h2>
+      <p class="lede" style="margin-top: 24px; max-width: 760px;">The figures above cover the venue only. Tell us which of these you'd like us to handle and we'll bring back options and quotes from vendors who already know these buildings.</p>
+      <a href="https://cocoonflexspaces.github.io/cocoon-sc-page-redesign/" target="_blank" rel="noopener" class="cta-pill" style="margin-top: 12px; background: #FFF; color: var(--teal);">How Super Concierge works ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- =================== DOWNLOADS =================== -->
+<section id="downloads">
+  <div class="superhead">Downloads</div>
+  <h2 class="headline" style="margin-top:14px;">Everything your team and your client need to present the two houses.</h2>
+  <div class="dl-grid">
+    <a class="dl primary" href="downloads/cocoon-holiday-activation-all-assets.zip" download><span class="k">Everything · ZIP</span><span class="t">All photos + floor plans</span><span class="s">Both houses · 9 MB</span><span class="go">Download ↓</span></a>
+    <a class="dl" href="downloads/casa-joy-photos.zip" download><span class="k">Casa Joy · ZIP</span><span class="t">Casa Joy photos</span><span class="s">Cleared visualisations, as furnished today, past activations · 5 MB</span><span class="go">Download ↓</span></a>
+    <a class="dl" href="downloads/casa-mas-photos-and-plans.zip" download><span class="k">Casa Mas · ZIP</span><span class="t">Casa Mas photos + plans</span><span class="s">Floors 1–4 · floor plans PDF · 5 MB</span><span class="go">Download ↓</span></a>
+    <a class="dl" href="https://drive.google.com/file/d/1jkBUPWkS8udhlzEZKJ7zjJBRQfDgfAXf/view?usp=sharing" target="_blank" rel="noopener"><span class="k">Casa Joy · Video</span><span class="t">Walkthrough video</span><span class="s">Full room-by-room walkthrough of the house</span><span class="go">Watch ↗</span></a>
+  </div>
+</section>
+
+<!-- =================== NEXT STEPS =================== -->
+<section class="full">
+  <div class="callout" style="background: var(--ink); color: var(--cream);">
+    <div class="inner">
+      <div class="superhead" style="color: var(--terracotta);">Next steps</div>
+      <h2 class="title" style="color: var(--cream); margin-top: 18px; max-width: 980px; font-size: clamp(34px, 5vw, 64px);">Pick a house and an option, and we'll lock it in.</h2>
+    </div>
+    <div class="inner" style="margin-top: 48px;">
+      <div class="walk">
+        <div class="step"><div class="step-num" style="color: var(--terracotta);">01</div><h4 style="color: var(--cream);">Holds</h4><p style="color: rgba(245,242,232,0.78);">Casa Joy is on soft hold for Nov 17–22, and we're extending it to cover the three Cocoon prep days before and three reset days after. Casa Mas is held for Nov 17–22, with one earlier hold still ahead of us that we're working to clear. If another client challenges a hold, we'll give you as much notice as possible to confirm.</p></div>
+        <div class="step"><div class="step-num" style="color: var(--terracotta);">02</div><h4 style="color: var(--cream);">Walkthrough</h4><p style="color: rgba(245,242,232,0.78);">A one-hour tech scout of either or both houses with your production team is complimentary. It's also when we'd finalise the crowd-flow plan and confirm the furniture scope at Casa Joy.</p></div>
+        <div class="step"><div class="step-num" style="color: var(--terracotta);">03</div><h4 style="color: var(--cream);">Confirm</h4><p style="color: rgba(245,242,232,0.78);">Renter Agreement, 50% deposit and a 25% refundable security deposit lock the dates. The balance is due 30 days before load-in, and insurance certificates two days before load-in.</p></div>
+      </div>
+    </div>
+    <div class="inner" style="margin-top: 56px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <a href="mailto:eduard@cocoonflexspaces.com?cc=andres@cocoonflexspaces.com&amp;subject=Holiday%20activation%20%E2%80%94%20next%20steps" class="cta-pill terracotta">Reply to Eduard &amp; Andres →</a>
+      <a href="tel:+19173983938" class="cta-pill" style="background: transparent; border: 1px solid rgba(245,242,232,0.4);">Call (917) 398-3938</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="inner">
+    <div>
+      <div class="sig">Eduard Monteagudo · Andres Tovar · Cocoon Flex Spaces</div>
+      <div class="meta" style="margin-top: 6px;">eduard@cocoonflexspaces.com · andres@cocoonflexspaces.com · (917) 398-3938</div>
+    </div>
+    <div class="meta" style="text-align: right;">
+      <div>Prepared for Mia Vitale · The Experiential</div>
+      <div style="margin-top: 4px;">Confidential · shared under NDA · pricing valid for 30 days</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Gallery tabs
+  document.querySelectorAll('.tabs').forEach(function (bar) {
+    var tabs = bar.querySelectorAll('.tab');
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        tabs.forEach(function (x) {
+          x.setAttribute('aria-selected', x === t ? 'true' : 'false');
+          var g = document.getElementById(x.dataset.gallery);
+          if (g) g.classList.toggle('active', x === t);
+        });
+      });
+    });
+  });
+  // Option A/B toggles
+  document.querySelectorAll('.opt-toggle').forEach(function (tg) {
+    var scope = tg.dataset.scope;
+    tg.querySelectorAll('button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        tg.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        document.querySelectorAll('.opt-panel[data-scope="' + scope + '"]').forEach(function (p) {
+          p.classList.toggle('active', p.dataset.opt === b.dataset.opt);
+        });
+      });
+    });
+  });
+  // Lightbox with prev/next within the visible gallery
+  var lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = '<button type="button" class="lightbox-close" aria-label="Close">×</button>' +
+    '<button type="button" class="lightbox-nav prev" aria-label="Previous">‹</button>' +
+    '<img src="" alt="" /><button type="button" class="lightbox-nav next" aria-label="Next">›</button>' +
+    '<div class="lightbox-caption"></div>';
+  document.body.appendChild(lb);
+  var img = lb.querySelector('img'), cap = lb.querySelector('.lightbox-caption');
+  var list = [], idx = 0;
+  function show(i) {
+    idx = (i + list.length) % list.length;
+    var el = list[idx];
+    img.src = el.dataset.full || el.src; img.alt = el.alt; cap.textContent = el.alt;
+  }
+  function open(el) {
+    var gal = el.closest('.gallery') || el.closest('section');
+    list = Array.prototype.slice.call(gal.querySelectorAll('.photo img'));
+    show(list.indexOf(el));
+    lb.classList.add('open'); document.body.style.overflow = 'hidden';
+  }
+  function close() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+  document.querySelectorAll('section[data-lightbox] .gallery .photo img').forEach(function (el) {
+    el.parentElement.addEventListener('click', function () { open(el); });
+  });
+  lb.querySelector('.prev').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+  lb.querySelector('.next').addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+  lb.querySelector('.lightbox-close').addEventListener('click', close);
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowRight') show(idx + 1);
+    if (e.key === 'ArrowLeft') show(idx - 1);
+  });
+})();
+</script>
+</body>
+</html>
